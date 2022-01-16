@@ -1,0 +1,141 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Poppins:wght@400;500&family=Shadows+Into+Light&display=swap');
+/* Header */
+.influencer-tab{
+    display: flex;
+    justify-content: space-between;
+}
+/*--------- First-Portion ----------*/
+.first-section{
+    display:flex;
+    align-items: center;
+}
+.first-portion-img{
+width: 440px;
+height: 414px;
+}
+.prebook{
+    font-weight: 700;
+    color: white;
+    border-color:#d11157;
+    background-color:#d11157 ;
+width: 196px;
+height: 44px;
+top: 511px;
+left: 120px;
+border-radius: 41px;
+padding: 10px, 24px, 10px,24px;
+}
+/* Popular collection */
+.popular-collection{
+    display:flex;
+    align-items: center;
+}
+
+/* common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    background-color:white;
+     width: 870px;
+     padding: 30px;
+     margin-top: 21px;
+     border-radius: 5px;
+}
+hr{
+    border: 10px solid #b34848;
+    margin: bottom 27px;
+}
+/* top section styles */
+
+.section-title{
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+}
+
+/* Products Style */
+.product .product-banner img{
+    width: 300px;
+    height: 256px;
+}
+.products{
+    padding: 40px 20px;
+    display: grid;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.product-info{
+    display: flex;
+    align-items: center;
+    grid-column-gap: center;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #ffc014;
+}
+.fa-star.empty{
+    color: #aeaeae;
+}
+/* Personal Design */
+.personal-design{
+    display: flex;
+    background-color: rgb(206, 138, 138);
+    padding: 10px 10px;
+    border-radius: 20px;
+    
+}
+.personal-design img{
+    width: 240px;
+    height: 200px;
+    border-radius: 10px;
+}
+.box{
+    padding:10px;
+}
+/* ---------Footer----------- */
+.footer{
+    font-family: 'Lato', sans-serif;
+    /* padding: 50px 589px 50px 589px; */
+    background-color: #0A0826;
+    text-align: center;
+    color: white;
+    
+}
+
+/*------------ Media Query------------- */
+
+/*------ Mobile Device------- */
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .products{
+        flex-direction: column;
+    }
+    
+}
+/*--------- Tablet devices----------- */
+
+@media only screen and (min-width: 688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+    
